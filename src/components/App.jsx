@@ -41,8 +41,8 @@ export default function App() {
     setContacts(contactsLists);
   };
 
-  const handleDelete = e => {
-    setContacts(contacts.filter(contact => contact.id !== e));
+  const handleDelete = date => {
+    setContacts(contacts.filter(contact => contact.id !== date));
   };
 
   const getFilteredContacts = () => {
