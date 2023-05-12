@@ -26,10 +26,10 @@ export default function App() {
     setFilter(value);
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = date => {
     const id = nanoid();
-    const name = e.name;
-    const number = e.number;
+    const name = date.name;
+    const number = date.number;
     const contactsLists = [...contacts];
 
     if (contactsLists.findIndex(contact => name === contact.name) !== -1) {
